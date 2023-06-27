@@ -1,6 +1,8 @@
-"use client ";
+"use client";
 import React from "react";
 import Link from "next/link";
+import styles from "./navbar.module.css";
+import DarkMoteToggle from "../DarkModeToggle/DarkMoteToggle";
 
 const links = [
 	{
@@ -37,14 +39,25 @@ const links = [
 
 const Navbar = () => {
 	return (
-		<div>
-			<Link href="/">App Name</Link>
-			<div>
+		<div className={styles.navbar}>
+			<Link href="/" className={styles.logo}>
+				App Name
+			</Link>
+			<div className={styles.links}>
+				<DarkMoteToggle />
 				{links.map((link) => (
-					<Link href={link.url} key={link.id}>
+					<Link href={link.url} key={link.id} className={styles.link}>
 						{link.title}
 					</Link>
 				))}
+				<button
+					className={styles.navBtn}
+					onClick={() => {
+						console.log("Logged Out");
+					}}
+				>
+					Logout
+				</button>
 			</div>
 		</div>
 	);
