@@ -30,34 +30,28 @@ const links = [
 		title: "Contact",
 		url: "/contact",
 	},
-	{
-		id: 6,
-		title: "Dashboard",
-		url: "/dashboard",
-	},
 ];
 
 const Navbar = () => {
 	return (
 		<div className={styles.navbar}>
-			<Link href="/" className={styles.logo}>
-				App Name
+			<Link
+				href="/"
+				className={styles.logo}
+			>
+				The Journey
 			</Link>
 			<div className={styles.links}>
 				<DarkMoteToggle />
 				{links.map((link) => (
-					<Link href={link.url} key={link.id} className={styles.link}>
+					<Link
+						href={link.url}
+						key={link.id}
+						className={styles.link}
+					>
 						{link.title}
 					</Link>
 				))}
-				<button
-					className={styles.navBtn}
-					onClick={() => {
-						console.log("Logged Out");
-					}}
-				>
-					Logout
-				</button>
 			</div>
 		</div>
 	);
