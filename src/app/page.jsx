@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./home.module.css";
-import Hero from "public/hero.png";
 import Button from "@/components/Button/Button";
 
 export default function Home() {
@@ -22,8 +21,8 @@ export default function Home() {
 					src="https://images.pexels.com/photos/3695297/pexels-photo-3695297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 					alt=""
 					className={styles.img}
-					width={200}
-					height={200}
+					width={150}
+					height={150}
 				/>
 			</div>
 		</div>

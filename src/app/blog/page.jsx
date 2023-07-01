@@ -3,16 +3,22 @@ import styles from "./blog.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+// const getData = async () => {
+// 	const res = await fetch("/api/posts", { next: { revalidate: 2 } });
+// 	if (!res.ok) {
+// 		throw new Error("Failed to fetch data");
+// 	}
+// 	return res.json();
+// };
+
 const getData = async () => {
-	const res = await fetch("http://localhost:3000/api/posts", { next: { revalidate: 2 } });
-	if (!res.ok) {
-		throw new Error("Failed to fetch data");
-	}
-	return res.json();
+	const res = await import("../api/posts/route.js");
+	return await (await res.GET()).json();
 };
 
 const Blog = async () => {
 	const data = await getData();
+	console.log(data);
 	return (
 		<div className={styles.mainContainer}>
 			{data.map((item) => (
