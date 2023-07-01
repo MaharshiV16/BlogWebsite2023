@@ -9,7 +9,6 @@
 
 .img {
 	object-fit: cover;
-	filter: grayscale(100%);
 }
 
 .imgText {

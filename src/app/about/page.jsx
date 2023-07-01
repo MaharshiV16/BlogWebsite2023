@@ -8,45 +8,36 @@ const About = () => {
 		<div className={styles.about}>
 			<div className={styles.imgContainer}>
 				<Image
-					src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+					src="https://i.imgur.com/c5g8tOo.png"
 					fill={true}
 					alt=""
 					className={styles.img}
 				/>
-				<div className={styles.imgText}>
-					<h1 className={styles.imgTitle}>Digital Storytellers</h1>
-					<h2 className={styles.imgDesc}>Handcrafting award winning digital experiences</h2>
-				</div>
 			</div>
 			<div className={styles.textContainer}>
 				<div className={styles.item}>
-					<h1 className={styles.title}>Who Are We?</h1>
+					<h1 className={styles.title}>Who Am I?</h1>
 					<p className={styles.desc}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure esse
-						tempora beatae. A suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea eveniet? Lorem ipsum dolor sit
-						amet consectetur adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure esse tempora beatae, a suscipit
-						eos. Animi quibusdam cum omnis officiis
+						I am Maharshi Vashistha. Journeying through the corridors of time, the digits 20bcs004 stand as an emblematic
+						testament to the euphoric highs and the tenacious lows that have etched their mark on the canvas of my college life.
+						Welcome to my world, where my roll-number becomes more than a mere collection of digits, but a symbol of
+						transformation, resilience, and the unwavering spirit that propelled me through the enchanting labyrinth of NIT
+						Hamirpur.
 						<br />
 						<br />
-						voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae dolor, optio
-						voluptatibus magnam iure esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-						eveniet?
 					</p>
 				</div>
 				<div className={styles.item}>
-					<h1 className={styles.title}>What We Do?</h1>
+					<h1 className={styles.title}>What I Do?</h1>
 					<p className={styles.desc}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure esse
-						tempora beatae, a suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea eveniet? Lorem ipsum dolor sit
-						amet consectetur adipisicing elit. - Creative Illustrations
-						<br />
-						<br /> - Dynamic Websites
-						<br />
-						<br /> - Fast and Handy
-						<br />
-						<br /> - Mobile Apps
+						I love to create exceptional web experiences that leave a lasting impression. With a firm command of C++ and ReactJS,
+						I bring well-designed, intuitive, and practical websites to life. I embrace fresh ideas and the challenge of making my
+						mark as a developer. I strive for growth, crafting impactful online solutions.
 					</p>
-					<Button text="Contact" url="contact" />
+					<Button
+						text="Contact"
+						url="contact"
+					/>
 				</div>
 			</div>
 		</div>

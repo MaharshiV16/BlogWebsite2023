@@ -11,6 +11,6 @@ export const GET = async () => {
 
 		return new NextResponse(JSON.stringify(posts), { status: 200 });
 	} catch (err) {
-		return new NextResponse("Database Error", { status: 500 });
+		return new NextResponse(err, { status: 500 });
 	}
 };

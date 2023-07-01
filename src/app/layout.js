@@ -8,8 +8,9 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "mv. journey",
-	description: "A college journey lived and summarised by Maharshi Vashistha. Batch of 2020-2024 CSE",
+	title: "The Journey",
+	description:
+		"Discover the insightful and relatable tales of Maharshi Vashistha's college life, as he takes you on a journey filled with friendships, academics, and memorable moments, offering valuable advice along the way.",
 };
 
 export default function RootLayout({ children }) {
